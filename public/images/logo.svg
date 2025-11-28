@@ -1,0 +1,11 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ADEW Coastal Cleaning Co.">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop stop-color="#005C99" offset="0%" />
+      <stop stop-color="#FF7F6A" offset="100%" />
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="28" fill="url(#g)" />
+  <text x="100" y="105" text-anchor="middle" font-family="Poppins, Inter, sans-serif" font-size="48" font-weight="800" fill="#FAF5EF">A</text>
+  <text x="100" y="140" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#FAF5EF">Coastal</text>
+</svg>

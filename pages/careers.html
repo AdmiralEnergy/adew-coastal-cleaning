@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Careers | ADEW Coastal Cleaning Co.</title>
+    <meta
+      name="description"
+      content="Join ADEW Coastal Cleaning Co. Apply for cleaning roles across Oak Island and Brunswick County."
+    />
+    <meta property="og:title" content="Careers | ADEW Coastal Cleaning Co." />
+    <meta property="og:description" content="Now hiring cleaners in Oak Island and Brunswick County." />
+    <link rel="icon" href="/public/images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              coastal: "#005C99",
+              coral: "#FF7F6A",
+              sand: "#FAF5EF",
+              charcoal: "#333333",
+              fog: "#EEEEEE",
+            },
+            fontFamily: {
+              sans: ["Inter", "system-ui", "sans-serif"],
+              heading: ["Poppins", "Inter", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body class="bg-sand text-charcoal">
+    <header class="sticky top-0 z-30 nav-backdrop">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a class="flex items-center gap-3" href="/pages/index.html" aria-label="ADEW Coastal Cleaning Co.">
+          <img src="/public/images/logo.svg" alt="ADEW Coastal Cleaning Co. logo" class="h-10 w-10" />
+          <div>
+            <div class="text-sm uppercase tracking-[0.25em] text-coastal font-semibold">ADEW</div>
+            <div class="font-heading text-lg font-semibold text-charcoal">Coastal Cleaning Co.</div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-semibold">
+          <a href="/pages/services.html" class="hover:text-coastal">Services</a>
+          <a href="/pages/book.html" class="hover:text-coastal">Book</a>
+          <a href="/pages/about.html" class="hover:text-coastal">About</a>
+          <a href="/pages/careers.html" class="text-coastal">Careers</a>
+          <a href="/pages/contact.html" class="hover:text-coastal">Contact</a>
+          <a href="/pages/book.html" class="btn-primary text-sm">Book a Cleaning</a>
+        </nav>
+        <button
+          id="nav-toggle"
+          class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-full border border-fog"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          ☰
+        </button>
+      </div>
+      <div id="nav-menu" class="md:hidden hidden border-t border-fog bg-white">
+        <div class="px-4 py-3 flex flex-col gap-3 text-sm font-semibold">
+          <a href="/pages/services.html" class="hover:text-coastal">Services</a>
+          <a href="/pages/book.html" class="hover:text-coastal">Book</a>
+          <a href="/pages/about.html" class="hover:text-coastal">About</a>
+          <a href="/pages/careers.html" class="text-coastal">Careers</a>
+          <a href="/pages/contact.html" class="hover:text-coastal">Contact</a>
+          <a href="/pages/book.html" class="btn-primary text-center">Book a Cleaning</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-14 space-y-10">
+      <section class="space-y-3">
+        <p class="badge">Careers</p>
+        <h1 class="font-heading text-4xl font-bold text-charcoal">Join our coastal cleaning crew.</h1>
+        <p class="text-lg text-slate-700">
+          We’re hiring reliable, detail-oriented cleaners across Oak Island and Brunswick County. Transportation and a
+          great attitude are musts—we’ll train the rest.
+        </p>
+      </section>
+
+      <div id="form-success" class="hidden p-4 rounded-xl bg-green-50 border border-green-200 text-green-800 text-sm">
+        Thanks! Your application was received.
+      </div>
+
+      <section class="card p-6 md:p-8">
+        <form
+          name="job-application"
+          method="POST"
+          data-netlify="true"
+          data-notion-function="/.netlify/functions/notion-job-application"
+          action="/pages/careers.html?success=1"
+          class="space-y-4"
+        >
+          <input type="hidden" name="form-name" value="job-application" />
+          <div class="grid md:grid-cols-2 gap-4">
+            <label class="flex flex-col gap-2 text-sm font-semibold">
+              Name
+              <input class="input" type="text" name="name" required aria-label="Name" />
+            </label>
+            <label class="flex flex-col gap-2 text-sm font-semibold">
+              Phone
+              <input class="input" type="tel" name="phone" required aria-label="Phone" />
+            </label>
+          </div>
+          <label class="flex flex-col gap-2 text-sm font-semibold">
+            Email
+            <input class="input" type="email" name="email" required aria-label="Email" />
+          </label>
+          <label class="flex flex-col gap-2 text-sm font-semibold">
+            Do you have transportation?
+            <select class="input" name="transportation" aria-label="Transportation">
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </label>
+          <label class="flex flex-col gap-2 text-sm font-semibold">
+            Days available
+            <input class="input" type="text" name="availability" placeholder="e.g., Mon–Fri mornings" aria-label="Availability" />
+          </label>
+          <label class="flex flex-col gap-2 text-sm font-semibold">
+            Cleaning experience
+            <textarea class="input" name="experience" rows="3" aria-label="Experience"></textarea>
+          </label>
+          <div class="flex flex-wrap gap-3">
+            <button type="submit" class="btn-primary">Submit application</button>
+            <a href="tel:+19105550117" class="btn-secondary">Call (910) 555-0117</a>
+          </div>
+          <p class="text-xs text-slate-600">
+            Applications are processed via Netlify Forms and synced to our Notion hiring board.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-8">
+        <div class="space-y-3">
+          <div class="text-lg font-heading font-semibold">ADEW Coastal Cleaning Co.</div>
+          <p class="text-sm text-white/80">Family-owned cleaning for Oak Island, Brunswick County, and nearby towns.</p>
+          <div class="text-sm text-white/80">Insured • Owner-led • Local crews</div>
+        </div>
+        <div class="space-y-2 text-sm">
+          <div class="font-semibold text-white">Company</div>
+          <a href="/pages/services.html">Services</a><br />
+          <a href="/pages/about.html">About</a><br />
+          <a href="/pages/careers.html">Careers</a>
+        </div>
+        <div class="space-y-2 text-sm">
+          <div class="font-semibold text-white">Help</div>
+          <a href="/pages/book.html">Book a Cleaning</a><br />
+          <a href="/pages/contact.html">Contact</a>
+        </div>
+        <div class="space-y-2 text-sm">
+          <div class="font-semibold text-white">Contact</div>
+          <div>(910) 555-0117</div>
+          <div>hello@adewcoastal.com</div>
+          <div>Oak Island, NC</div>
+        </div>
+      </div>
+    </footer>
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>

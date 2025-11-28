@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | ADEW Coastal Cleaning Co.</title>
+    <meta
+      name="description"
+      content="The ADEW story — family-owned coastal cleaning for Oak Island and Brunswick County. Owner-led, insured, and trusted."
+    />
+    <meta property="og:title" content="About | ADEW Coastal Cleaning Co." />
+    <meta property="og:description" content="Family-owned cleaning team serving Oak Island & Brunswick County." />
+    <link rel="icon" href="/public/images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              coastal: "#005C99",
+              coral: "#FF7F6A",
+              sand: "#FAF5EF",
+              charcoal: "#333333",
+              fog: "#EEEEEE",
+            },
+            fontFamily: {
+              sans: ["Inter", "system-ui", "sans-serif"],
+              heading: ["Poppins", "Inter", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body class="bg-sand text-charcoal">
+    <header class="sticky top-0 z-30 nav-backdrop">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a class="flex items-center gap-3" href="/pages/index.html" aria-label="ADEW Coastal Cleaning Co.">
+          <img src="/public/images/logo.svg" alt="ADEW Coastal Cleaning Co. logo" class="h-10 w-10" />
+          <div>
+            <div class="text-sm uppercase tracking-[0.25em] text-coastal font-semibold">ADEW</div>
+            <div class="font-heading text-lg font-semibold text-charcoal">Coastal Cleaning Co.</div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-semibold">
+          <a href="/pages/services.html" class="hover:text-coastal">Services</a>
+          <a href="/pages/book.html" class="hover:text-coastal">Book</a>
+          <a href="/pages/about.html" class="text-coastal">About</a>
+          <a href="/pages/careers.html" class="hover:text-coastal">Careers</a>
+          <a href="/pages/contact.html" class="hover:text-coastal">Contact</a>
+          <a href="/pages/book.html" class="btn-primary text-sm">Book a Cleaning</a>
+        </nav>
+        <button
+          id="nav-toggle"
+          class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-full border border-fog"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          ☰
+        </button>
+      </div>
+      <div id="nav-menu" class="md:hidden hidden border-t border-fog bg-white">
+        <div class="px-4 py-3 flex flex-col gap-3 text-sm font-semibold">
+          <a href="/pages/services.html" class="hover:text-coastal">Services</a>
+          <a href="/pages/book.html" class="hover:text-coastal">Book</a>
+          <a href="/pages/about.html" class="text-coastal">About</a>
+          <a href="/pages/careers.html" class="hover:text-coastal">Careers</a>
+          <a href="/pages/contact.html" class="hover:text-coastal">Contact</a>
+          <a href="/pages/book.html" class="btn-primary text-center">Book a Cleaning</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-14 space-y-12">
+      <section class="grid md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-4">
+          <p class="badge">Our story</p>
+          <h1 class="font-heading text-4xl font-bold text-charcoal">Born on the Carolina coast.</h1>
+          <p class="text-slate-700">
+            ADEW Coastal Cleaning Co. is a family business built on reliability, clear communication, and pride in every
+            space we touch. We live here, work here, and treat every home and office like our own.
+          </p>
+          <ul class="list-check space-y-2 text-slate-700">
+            <li>Owner-led with on-call support</li>
+            <li>Insured and vetted team members</li>
+            <li>Serving Oak Island, Southport, Brunswick County</li>
+          </ul>
+        </div>
+        <div class="card p-6 space-y-3">
+          <div class="text-coastal font-semibold text-sm">Mission</div>
+          <h2 class="font-heading text-2xl text-charcoal">Make coastal living feel effortless.</h2>
+          <p class="text-slate-700">
+            We handle the details so you can enjoy the coast—whether that’s welcoming guests to your rental, returning to
+            a fresh home, or opening a spotless office each morning.
+          </p>
+          <div class="text-coastal font-semibold text-sm">Values</div>
+          <ul class="list-check space-y-2 text-slate-700">
+            <li>Trust and transparency</li>
+            <li>Consistent quality</li>
+            <li>Respect for your time and space</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card p-6 md:p-8">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div>
+            <h2 class="font-heading text-2xl font-bold text-charcoal">Proudly serving Oak Island + Brunswick County</h2>
+            <p class="text-slate-700">Local crews, familiar routes, fast scheduling.</p>
+          </div>
+          <div class="flex gap-3">
+            <a class="btn-primary" href="/pages/book.html">Book a cleaning</a>
+            <a class="btn-secondary" href="/pages/contact.html">Talk with us</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-8">
+        <div class="space-y-3">
+          <div class="text-lg font-heading font-semibold">ADEW Coastal Cleaning Co.</div>
+          <p class="text-sm text-white/80">Family-owned cleaning for Oak Island, Brunswick County, and nearby towns.</p>
+          <div class="text-sm text-white/80">Insured • Owner-led • Local crews</div>
+        </div>
+        <div class="space-y-2 text-sm">
+          <div class="font-semibold text-white">Company</div>
+          <a href="/pages/services.html">Services</a><br />
+          <a href="/pages/about.html">About</a><br />
+          <a href="/pages/careers.html">Careers</a>
+        </div>
+        <div class="space-y-2 text-sm">
+          <div class="font-semibold text-white">Help</div>
+          <a href="/pages/book.html">Book a Cleaning</a><br />
+          <a href="/pages/contact.html">Contact</a>
+        </div>
+        <div class="space-y-2 text-sm">
+          <div class="font-semibold text-white">Contact</div>
+          <div>(910) 555-0117</div>
+          <div>hello@adewcoastal.com</div>
+          <div>Oak Island, NC</div>
+        </div>
+      </div>
+    </footer>
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>

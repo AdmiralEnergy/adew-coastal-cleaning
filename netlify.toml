@@ -1,0 +1,41 @@
+## Netlify configuration for ADEW Coastal Cleaning Co.
+## Publish the repository root; human-friendly routes redirect to /pages/*.html
+
+[build]
+  publish = "."
+  command = ""
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/"
+  to = "/pages/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/services"
+  to = "/pages/services.html"
+  status = 200
+
+[[redirects]]
+  from = "/book"
+  to = "/pages/book.html"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/pages/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/careers"
+  to = "/pages/careers.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/pages/contact.html"
+  status = 200
+
+## Ensure form submissions trigger the Notion sync functions
+[[plugins]]
+  package = "@netlify/plugin-functions-core"

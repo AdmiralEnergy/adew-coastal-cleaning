@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADEW Coastal Cleaning Co. | Oak Island House Cleaning</title>
+    <meta
+      name="description"
+      content="ADEW Coastal Cleaning Co. — family-owned house, vacation rental, and office cleaning across Oak Island and Brunswick County. Book a reliable, insured clean today."
+    />
+    <meta property="og:title" content="ADEW Coastal Cleaning Co." />
+    <meta
+      property="og:description"
+      content="Family-owned, coastal cleanings for homes, vacation rentals, and offices in Oak Island & Brunswick County."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.netlify.app/" />
+    <meta property="og:image" content="/public/images/hero.jpg" />
+    <link rel="icon" href="/public/images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              coastal: "#005C99",
+              coral: "#FF7F6A",
+              sand: "#FAF5EF",
+              charcoal: "#333333",
+              fog: "#EEEEEE",
+            },
+            fontFamily: {
+              sans: ["Inter", "system-ui", "sans-serif"],
+              heading: ["Poppins", "Inter", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "ADEW Coastal Cleaning Co.",
+        "image": "https://example.netlify.app/public/images/logo.svg",
+        "url": "https://example.netlify.app",
+        "telephone": "(910) 555-0117",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Oak Island",
+          "addressRegion": "NC",
+          "postalCode": "28465",
+          "addressCountry": "US"
+        },
+        "areaServed": ["Oak Island", "Brunswick County", "Southport"],
+        "priceRange": "$$",
+        "description": "Residential, vacation rental, and office cleaning in Oak Island and Brunswick County."
+      }
+    </script>
+  </head>
+  <body class="bg-sand text-charcoal">
+    <header class="sticky top-0 z-30 nav-backdrop">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a class="flex items-center gap-3" href="/pages/index.html" aria-label="ADEW Coastal Cleaning Co.">
+          <img src="/public/images/logo.svg" alt="ADEW Coastal Cleaning Co. logo" class="h-10 w-10" />
+          <div>
+            <div class="text-sm uppercase tracking-[0.25em] text-coastal font-semibold">ADEW</div>
+            <div class="font-heading text-lg font-semibold text-charcoal">Coastal Cleaning Co.</div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-semibold">
+          <a href="/pages/services.html" class="hover:text-coastal">Services</a>
+          <a href="/pages/book.html" class="hover:text-coastal">Book</a>
+          <a href="/pages/about.html" class="hover:text-coastal">About</a>
+          <a href="/pages/careers.html" class="hover:text-coastal">Careers</a>
+          <a href="/pages/contact.html" class="hover:text-coastal">Contact</a>
+          <a href="/pages/book.html" class="btn-primary text-sm">Book a Cleaning</a>
+        </nav>
+        <button
+          id="nav-toggle"
+          class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-full border border-fog"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          ☰
+        </button>
+      </div>
+      <div id="nav-menu" class="md:hidden hidden border-t border-fog bg-white">
+        <div class="px-4 py-3 flex flex-col gap-3 text-sm font-semibold">
+          <a href="/pages/services.html" class="hover:text-coastal">Services</a>
+          <a href="/pages/book.html" class="hover:text-coastal">Book</a>
+          <a href="/pages/about.html" class="hover:text-coastal">About</a>
+          <a href="/pages/careers.html" class="hover:text-coastal">Careers</a>
+          <a href="/pages/contact.html" class="hover:text-coastal">Contact</a>
+          <a href="/pages/book.html" class="btn-primary text-center">Book a Cleaning</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-wave">
+        <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+          <div class="space-y-6">
+            <div class="badge inline-block">Family-owned • Oak Island</div>
+            <h1 class="font-heading text-4xl md:text-5xl font-bold text-charcoal leading-tight">
+              Coastal cleanings that feel like a fresh sea breeze.
+            </h1>
+            <p class="text-lg text-slate-700 max-w-xl">
+              ADEW Coastal Cleaning Co. delivers spotless homes, vacation rentals, and offices across Oak Island and
+              Brunswick County. Reliable, insured, and owner-led.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <a href="/pages/book.html" class="btn-primary">Book a Cleaning</a>
+              <a href="/pages/careers.html" class="btn-secondary">Now Hiring</a>
+            </div>
+            <div class="flex items-center gap-3 text-sm text-slate-700">
+              <span class="font-semibold text-coastal">Serving:</span>
+              <span>Oak Island • Southport • Brunswick County</span>
+            </div>
+          </div>
+          <div class="card p-6 shadow-soft space-y-4">
+            <div class="text-sm font-semibold text-coastal">Popular services</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div class="p-4 rounded-xl border border-fog">
+                <div class="text-coastal font-semibold">Residential</div>
+                <p class="text-sm text-slate-700">Weekly/bi-weekly deep care with trusted checklists.</p>
+              </div>
+              <div class="p-4 rounded-xl border border-fog">
+                <div class="text-coastal font-semibold">Vacation Rentals</div>
+                <p class="text-sm text-slate-700">Laundry, restock, and fast turnover resets.</p>
+              </div>
+              <div class="p-4 rounded-xl border border-fog">
+                <div class="text-coastal font-semibold">Office</div>
+                <p class="text-sm text-slate-700">Reliable schedules and flexible monthly contracts.</p>
+              </div>
+              <div class="p-4 rounded-xl border border-fog">
+                <div class="text-coastal font-semibold">Move In/Out</div>
+                <p class="text-sm text-slate-700">Detail cleans that make new spaces shine.</p>
+              </div>
+            </div>
+            <div class="text-xs text-slate-600">Fully insured • Owner on-call • Satisfaction guaranteed</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-light">
+        <div class="max-w-6xl mx-auto px-4 py-14 space-y-8">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <p class="badge">Why choose us</p>
+              <h2 class="font-heading text-3xl font-bold text-charcoal mt-2">Reliable, insured, and owner-led.</h2>
+            </div>
+            <a href="/pages/book.html" class="btn-primary text-sm">Book your clean</a>
+          </div>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="card p-5 space-y-3">
+              <div class="text-coastal font-semibold text-sm">Reliability</div>
+              <h3 class="font-heading text-xl text-charcoal">On-time, every time</h3>
+              <p class="text-slate-700 text-sm">Consistent schedules and clear communication before every visit.</p>
+            </div>
+            <div class="card p-5 space-y-3">
+              <div class="text-coastal font-semibold text-sm">Insured</div>
+              <h3 class="font-heading text-xl text-charcoal">Fully covered</h3>
+              <p class="text-slate-700 text-sm">Your space and belongings are protected with proper coverage.</p>
+            </div>
+            <div class="card p-5 space-y-3">
+              <div class="text-coastal font-semibold text-sm">Owner-led</div>
+              <h3 class="font-heading text-xl text-charcoal">Family business</h3>
+              <p class="text-slate-700 text-sm">When you call, you reach the owner. Quality and care come standard.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="max-w-6xl mx-auto px-4 py-14 grid md:grid-cols-2 gap-8 items-center">
+          <div class="space-y-4">
+            <p class="badge">Service Area</p>
+            <h2 class="font-heading text-3xl font-bold text-charcoal">Oak Island & Brunswick County</h2>
+            <p class="text-slate-700">
+              We’re local to the Carolina coast—serving Oak Island, Southport, St. James, and Brunswick County beach
+              communities. Same-team crews, familiar routes, and responsive scheduling.
+            </p>
+            <ul class="list-check space-y-2 text-slate-700">
+              <li>Oak Island • Southport • St. James</li>
+              <li>Calabash • Shallotte • Holden Beach</li>
+              <li>Vacation rentals, primary homes, and offices</li>
+            </ul>
+          </div>
+          <div class="card p-6 space-y-4">
+            <h3 class="font-heading text-2xl text-charcoal">What clients say</h3>
+            <div class="space-y-4">
+              <blockquote class="border-l-4 border-coastal pl-4 text-slate-700">
+                “ADEW keeps our beach rental guest-ready every weekend. Fast turnovers, no surprises.”
+              </blockquote>
+              <blockquote class="border-l-4 border-coastal pl-4 text-slate-700">
+                “Trustworthy, careful, and consistent. Love supporting a family-owned crew.”
+              </blockquote>
+              <blockquote class="border-l-4 border-coastal pl-4 text-slate-700">
+                “Office is spotless Monday mornings. Easy scheduling and clear communication.”
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-8">
+        <div class="space-y-3">
+          <div class="text-lg font-heading font-semibold">ADEW Coastal Cleaning Co.</div>
+          <p class="text-sm text-white/80">Family-owned cleaning for Oak Island, Brunswick County, and nearby towns.</p>
+          <div class="text-sm text-white/80">Insured • Owner-led • Local crews</div>
+        </div>
+        <div class="space-y-2 text-sm">
+          <div class="font-semibold text-white">Company</div>
+          <a href="/pages/services.html">Services</a><br />
+          <a href="/pages/about.html">About</a><br />
+          <a href="/pages/careers.html">Careers</a>
+        </div>
+        <div class="space-y-2 text-sm">
+          <div class="font-semibold text-white">Help</div>
+          <a href="/pages/book.html">Book a Cleaning</a><br />
+          <a href="/pages/contact.html">Contact</a>
+        </div>
+        <div class="space-y-2 text-sm">
+          <div class="font-semibold text-white">Contact</div>
+          <div>(910) 555-0117</div>
+          <div>hello@adewcoastal.com</div>
+          <div>Oak Island, NC</div>
+        </div>
+      </div>
+    </footer>
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>

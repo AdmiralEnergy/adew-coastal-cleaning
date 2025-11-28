@@ -1,0 +1,118 @@
+:root {
+  --coastal: #005c99;
+  --coral: #ff7f6a;
+  --sand: #faf5ef;
+  --charcoal: #333333;
+  --fog: #eeeeee;
+}
+
+body {
+  background: var(--sand);
+  color: var(--charcoal);
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--coastal), #0275c7);
+  color: white;
+  border-radius: 9999px;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  box-shadow: 0 12px 30px rgba(0, 92, 153, 0.2);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 34px rgba(0, 92, 153, 0.24);
+}
+
+.btn-secondary {
+  background: white;
+  color: var(--coastal);
+  border: 1px solid rgba(0, 92, 153, 0.16);
+  border-radius: 9999px;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.card {
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.section-light {
+  background: linear-gradient(180deg, rgba(0, 92, 153, 0.06), transparent 55%);
+}
+
+.logo-text {
+  letter-spacing: 0.08em;
+  font-weight: 800;
+}
+
+.hero-wave {
+  background: radial-gradient(circle at 20% 20%, rgba(255, 127, 106, 0.24), transparent 32%),
+    radial-gradient(circle at 80% 0%, rgba(0, 92, 153, 0.25), transparent 38%),
+    linear-gradient(135deg, #fdfbf8, #f2f8fb);
+}
+
+.nav-backdrop {
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.86);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.input {
+  border-radius: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 0.85rem 1rem;
+}
+
+.input:focus {
+  outline: 2px solid rgba(0, 92, 153, 0.16);
+  border-color: rgba(0, 92, 153, 0.35);
+}
+
+.badge {
+  background: rgba(0, 92, 153, 0.08);
+  color: var(--coastal);
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+}
+
+.list-check li {
+  position: relative;
+  padding-left: 1.6rem;
+}
+
+.list-check li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--coastal);
+  font-weight: 700;
+}
+
+.shadow-soft {
+  box-shadow: 0 20px 45px rgba(0, 92, 153, 0.14);
+}
+
+.footer {
+  background: #0c2233;
+  color: #e8f2fb;
+}
+
+.footer a {
+  color: #e8f2fb;
+}
