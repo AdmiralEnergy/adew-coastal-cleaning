@@ -36,6 +36,3 @@
   to = "/pages/contact.html"
   status = 200
 
-## Ensure form submissions trigger the Notion sync functions
-[[plugins]]
-  package = "@netlify/plugin-functions-core"
